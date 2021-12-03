@@ -1,0 +1,38 @@
+.form_signup {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 50px auto;
+}
+.inputs_text {
+    margin-bottom: 10px;
+}
+
+.form_signup .inputs_text input {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  width: 40%;
+}
+
+.signup_btn {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.form_signup label {
+  display: flex;
+  margin: 5px;
+  border: 1px solid #fff;
+}
+
+.form_signup label > :nth-child(odd) {
+  width: 5%;
+}

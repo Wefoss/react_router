@@ -1,0 +1,30 @@
+ .form_signin {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.form_signin label>input {
+    width: -webkit-fill-available;
+}
+
+.form_signin input {
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+
+
+.form_signin > input{
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form_signin >input:hover {
+    background-color:lightgray;
+}
+
