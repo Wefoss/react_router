@@ -1,9 +1,10 @@
 import React from "react";
-import { Field } from "formik";
+import { ErrorMessage, Field } from "formik";
 import cx from "classnames";
 import style from "./InputWrapper.module.scss";
 
-const InputWrapper = ({ name, ...rest }) => {
+const InputWrapper = ({ name, addClass, ...rest }) => {
+  const propClass = cx(style[addClass], style.error)
   return (
     <label className={style.label_wrap}>
       <Field name={name}>
@@ -15,6 +16,8 @@ const InputWrapper = ({ name, ...rest }) => {
           return <input className={classNames} {...field} {...rest} />;
         }}
       </Field>
+
+      <ErrorMessage name={name} component="div" className={propClass} />
     </label>
   );
 };

@@ -1,21 +1,29 @@
 .form_signup {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 550px;
   margin: 50px auto;
+  color: #fff;
 }
 .inputs_text {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputs_text label {
+  display: block;
 }
 
 .form_signup .inputs_text input {
-  padding: 15px;
-  margin: 5px;
+  padding: 20px ;
+  margin: 10px 5px;
   border-radius: 5px;
   font-size: 1rem;
   outline: none;
   border: none;
-  width: 40%;
 }
 
 .signup_btn {
@@ -27,12 +35,17 @@
   outline: none;
 }
 
-.form_signup label {
+.signup_label {
   display: flex;
   margin: 5px;
   border: 1px solid #fff;
+  padding: 20px 0px;
 }
 
-.form_signup label > :nth-child(odd) {
+.signup_label > :nth-child(odd) {
   width: 5%;
+}
+.radio_info {
+  font-size: 0.8rem;
+  
 }

@@ -1,7 +1,26 @@
 .valid {
-    background-color: hsla(130, 90%, 70%, 0.4);
+  background-color: hsla(130, 90%, 70%, 0.4);
 }
 .invalid {
-    background-color:  rgb(238, 169, 169);
+  background-color: rgb(241, 192, 192);
 }
 
+.label_wrap {
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  width: 80%;
+  top: 70%;
+  left: 10%;
+  z-index: 2;
+  border-radius: 5px;
+  background-color: lightcoral;
+}
+
+
+.errorSize {
+ font-size: 0.8rem;
+
+}

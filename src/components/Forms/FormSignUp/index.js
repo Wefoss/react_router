@@ -2,15 +2,16 @@ import React from "react";
 import { Formik, Field, Form } from "formik";
 import { SIGN_UP_SCHEME } from "../../../Tools/schemaValidation";
 import style from "./FormSignUp.module.scss";
+import InputWrapper from "../InputWrapper";
 
 const FormSignUp = () => {
   const initValue = {
-    firstName: "",
-    lastName: "",
-    displayName: "",
+    fname: "",
+    lname: "",
+    dname: "",
     email: "",
     password: "",
-    confirmPass: "",
+    confirmPassword: "",
   };
 
   const handlerForm = (values, formikBag) => {
@@ -26,21 +27,23 @@ const FormSignUp = () => {
     >
       <Form className={style.form_signup}>
         <div className={style.inputs_text}>
-          <Field name="firstName" />
-          <Field name="lastName" />
-          <Field name="displayName" />
-          <Field name="email" />
-          <Field name="password" />
-          <Field name="confirmPass" />
+          <InputWrapper name="fname" addClass='errorSize'/>
+          <InputWrapper name="lname" addClass='errorSize'/>
+          <InputWrapper name="dname" addClass='errorSize'/>
+          <InputWrapper name="email" addClass='errorSize'/>
+          <InputWrapper name="password" addClass='errorSize'/>
+          <InputWrapper name="confirmPassword" addClass='errorSize'/>
         </div>
-        <label htmlFor="radio">
+        <label className={style.signup_label} htmlFor="radio">
           <Field type="radio" name="radio" />
-          <div><p>join to buy</p><p>join to buy join to buy join to buy join to buy</p></div>
+          <div><h3>Join As a Buyer</h3>
+          <p className={style.radio_info}>I am looking for a Name, Logo or Tagline for my business, brand or product.</p></div>
         </label>
 
-        <label htmlFor="radio">
+        <label className={style.signup_label} htmlFor="radio">
           <Field type="radio" name="radio" />
-          <div><p>join to buy</p><p>join to buy join to buy join to buy join to buy</p></div>
+          <div><h3>Join As a Creative or Marketplace Seller</h3>
+          <p className={style.radio_info}>I plan to submit name ideas, Logo designs or sell names in Domain Marketplace</p></div>
         </label>
 
         <input
