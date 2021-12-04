@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik, Field, Form } from "formik";
 import { SIGN_IN_SCHEMA } from "../../../Tools/schemaValidation";
-import style from './FormSignIn.module.scss'
+import style from "./FormSignIn.module.scss";
 import InputWrapper from "../InputWrapper";
 
 const FormSignIn = () => {
@@ -12,15 +12,20 @@ const FormSignIn = () => {
 
   const handlerForm = (values, formikBag) => {
     console.log(values, formikBag);
-    formikBag.resetForm()
+    formikBag.resetForm();
   };
 
   return (
-    <Formik validationSchema={SIGN_IN_SCHEMA} initialValues={initValue} onSubmit={handlerForm}>
+    <Formik
+      validationSchema={SIGN_IN_SCHEMA}
+      initialValues={initValue}
+      onSubmit={handlerForm}
+    >
       <Form className={style.form_signin}>
-        <InputWrapper name="email" />
-        <InputWrapper name="password" />
-        <input type="submit" value='LOGIN' />
+        <h1>LOGIN TO YOUR ACCOUNT</h1>
+        <InputWrapper name="email" placeholder="Email addres" />
+        <InputWrapper name="password" placeholder="Password" />
+        <input type="submit" value="LOGIN" />
       </Form>
     </Formik>
   );

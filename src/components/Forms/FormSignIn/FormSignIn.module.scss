@@ -1,30 +1,32 @@
- .form_signin {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 50px auto;
+.form_signin {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  margin: 100px auto;
 }
 
-.form_signin label>input {
-    width: -webkit-fill-available;
+.form_signin label > input {
+  width: -webkit-fill-available;
+}
+.form_signin h1 {
+    text-align: center;
+    margin: 20px;
 }
 
-.form_signin input {
-    padding: 15px;
-    margin: 5px;
-    border-radius: 5px;
-    font-size: 1rem;
-    outline: none;
-    border: none;
+input {
+  padding: 20px;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
 }
 
-
-.form_signin > input{
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+.form_signin > input {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-weight: 600;
+  background-color: #28d2d0;
 }
-
-.form_signin >input:hover {
-    background-color:lightgray;
-}
-

@@ -1,6 +1,6 @@
 import * as Yup from 'yup';
 
-export const NAME_SCHEMA = Yup.string().matches(/^[a-z][A-Z]{1,16}$/, 'Must be latin letter').required()
+export const NAME_SCHEMA = Yup.string().matches(/^[A-Z][a-z]{1,16}$/,'Must be latin letter').required();
 export const EMAIL_SCHEMA = Yup.string().email('Enter correct email').required()
 export const PASSWORD_SCHEMA = Yup.string().matches(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,32}$/,'Enter correct password').required()
 

@@ -11,7 +11,7 @@ const InputWrapper = ({ name, addClass, ...rest }) => {
         {({ field, form, meta }) => {
           const classNames = cx(style.input_wrap, {
             [style.valid]: meta.touched && !meta.error,
-            [style.invalid]: meta.touched && meta.error && meta.value,
+            [style.invalid]: meta.touched && meta.error,
           });
           return <input className={classNames} {...field} {...rest} />;
         }}

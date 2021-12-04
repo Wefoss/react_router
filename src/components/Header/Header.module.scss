@@ -1,14 +1,16 @@
 .header {
-  margin-top: 10px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .signup {
-  text-decoration: none;
+  width: 60px;
   padding: 10px;
-  border: 2px solid#fff;
   border-radius: 5px;
+  text-align: center;
+  border: 1px solid#fff;
+  text-decoration: none;
   color: #fff;
-}
+  }

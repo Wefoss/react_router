@@ -7,7 +7,8 @@ const Header = () => {
    
     return (
         <header className={style.header}>
-            <Link to="/"><img src="../../../images/squad-logo.png" alt="" /></Link>
+            
+            {(path === '/' || path === '/signup' || path === '/signin') && <Link to="/"><img src="../../../images/squad-logo.png" alt="" /></Link>}
             {(path === '/signin') && <Link className={style.signup} to="/signup">Sign Up</Link>}
             {(path === '/' || path === '/signup')  && <Link className={style.signup} to="/signin">Sign In</Link>}
         </header>
