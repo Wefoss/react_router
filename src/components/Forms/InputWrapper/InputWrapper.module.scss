@@ -2,7 +2,7 @@
   border: 2px solid hsla(130, 90%, 70%, 0.8);
 }
 .invalid {
-  border: 2px solid rgb(223, 111, 111);
+  border: 2px solid hsla(0, 80%, 70%, 0.8);
 }
 
 .label_wrap {
@@ -23,5 +23,12 @@
 
 
 .errorSize {
- font-size: 0.9rem;
+ font-size: 1.1rem;
+}
+
+@media screen and (min-width: 550px){
+  .errorSize {
+    font-size: 0.9rem;
+   }
+   
 }

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   max-width: 550px;
-  margin: 100px auto;
+  margin: 40px auto;
 }
 
 .form_signin label > input {
@@ -29,4 +29,10 @@ input {
   color: inherit;
   font-weight: 600;
   background-color: #28d2d0;
+}
+
+@media screen and (min-width: 550px) {
+  .form_signin  {
+    margin: 100px auto;
+  }
 }

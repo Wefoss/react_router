@@ -6,8 +6,8 @@ import InputWrapper from "../InputWrapper";
 
 const FormSignIn = () => {
   const initValue = {
-    email: "",
-    password: "",
+    Email: "",
+    Password: "",
   };
 
   const handlerForm = (values, formikBag) => {
@@ -23,8 +23,8 @@ const FormSignIn = () => {
     >
       <Form className={style.form_signin}>
         <h1>LOGIN TO YOUR ACCOUNT</h1>
-        <InputWrapper name="email" placeholder="Email addres" />
-        <InputWrapper name="password" placeholder="Password" />
+        <InputWrapper name="Email" placeholder="Email addres" />
+        <InputWrapper name="Password" placeholder="Password" />
         <input type="submit" value="LOGIN" />
       </Form>
     </Formik>

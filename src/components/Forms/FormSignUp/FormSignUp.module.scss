@@ -41,6 +41,7 @@ input {
 .signup_btn {
   border: none;
   color: inherit;
+  cursor: pointer;
   font-weight: 600;
   background-color: #28d2d0;
 }
@@ -52,6 +53,11 @@ input {
   border: 1px solid #fff;
   padding: 10px 0px 25px;
 }
+.signup_label_title {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
 .checbox_label {
   margin: 5px;
 }

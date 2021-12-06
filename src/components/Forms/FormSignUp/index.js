@@ -6,12 +6,12 @@ import InputWrapper from "../InputWrapper";
 
 const FormSignUp = () => {
   const initValue = {
-    fname: "",
-    lname: "",
-    dname: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
+    'First Name': "",
+    'Last Name': "",
+    'Display Name': "",
+    Email: "",
+    Password: "",
+    'Password Confirmation': "",
   };
 
   const handlerForm = (values, formikBag) => {
@@ -33,41 +33,44 @@ const FormSignUp = () => {
           </div>
           <div className={style.inputs_text}>
             <InputWrapper
-              name="fname"
+              name="First Name"
               addClass="errorSize"
               placeholder="First Name"
             />
             <InputWrapper
-              name="lname"
+              name="Last Name"
               addClass="errorSize"
               placeholder="Last Name"
             />
             <InputWrapper
-              name="dname"
+              name="Display Name"
               addClass="errorSize"
               placeholder="Display Name"
             />
             <InputWrapper
-              name="email"
+              name="Email"
               addClass="errorSize"
               placeholder="Email Addres"
+              type='email'
             />
             <InputWrapper
-              name="password"
+              name="Password"
               addClass="errorSize"
               placeholder="Password"
+              type='password'
             />
             <InputWrapper
-              name="confirmPassword"
+              name="Password Confirmation"
               addClass="errorSize"
               placeholder="Password Confirmation"
+              type='password'
             />
           </div>
 
           <label className={style.signup_label} htmlFor="radio">
             <Field type="radio" name="radio" />
             <div>
-              <h3>Join As a Buyer</h3>
+              <h3 className={style.signup_label_title}>Join As a Buyer</h3>
               <p className={style.radio_info}>
                 I am looking for a Name, Logo or Tagline for my business, brand
                 or product.
@@ -78,10 +81,10 @@ const FormSignUp = () => {
           <label className={style.signup_label} htmlFor="radio">
             <Field type="radio" name="radio" />
             <div>
-              <h3>Join As a Creative or Marketplace Seller</h3>
+              <h3 className={style.signup_label_title}>Join As a Creative or Marketplace Seller</h3>
               <p className={style.radio_info}>
                 I plan to submit name ideas, Logo designs or sell names in
-                Domain Marketplace
+                Domain Marketplace.
               </p>
             </div>
           </label>
