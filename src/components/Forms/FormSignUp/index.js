@@ -6,12 +6,12 @@ import InputWrapper from "../InputWrapper";
 
 const FormSignUp = () => {
   const initValue = {
-    'First Name': "",
-    'Last Name': "",
-    'Display Name': "",
-    Email: "",
-    Password: "",
-    'Password Confirmation': "",
+    firstName: "",
+    lastName: "",
+    displayName: "",
+    email: "",
+    password: "",
+    passwordConfirm: "",
   };
 
   const handlerForm = (values, formikBag) => {
@@ -33,34 +33,34 @@ const FormSignUp = () => {
           </div>
           <div className={style.inputs_text}>
             <InputWrapper
-              name="First Name"
+              name="firstName"
               addClass="errorSize"
               placeholder="First Name"
             />
             <InputWrapper
-              name="Last Name"
+              name="lastName"
               addClass="errorSize"
               placeholder="Last Name"
             />
             <InputWrapper
-              name="Display Name"
+              name="displayName"
               addClass="errorSize"
               placeholder="Display Name"
             />
             <InputWrapper
-              name="Email"
+              name="email"
               addClass="errorSize"
               placeholder="Email Addres"
               type='email'
             />
             <InputWrapper
-              name="Password"
+              name="password"
               addClass="errorSize"
               placeholder="Password"
               type='password'
             />
             <InputWrapper
-              name="Password Confirmation"
+              name="passwordConfirm"
               addClass="errorSize"
               placeholder="Password Confirmation"
               type='password'

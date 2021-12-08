@@ -10,10 +10,10 @@ export const SIGN_IN_SCHEMA = Yup.object({
 })
 
 export const SIGN_UP_SCHEME = Yup.object({
-    'First Name': NAME_SCHEMA,
-    'Last Name': NAME_SCHEMA,
-    'Display Name': NAME_SCHEMA,
-    Email: EMAIL_SCHEMA,
-    Password:PASSWORD_SCHEMA,
-    'Password Confirmation': Yup.string().oneOf([Yup.ref('password')], 'password does not match').required()
+    firstName: NAME_SCHEMA.required('First Name is required'),
+    lastName: NAME_SCHEMA.required('Last Name is required'),
+    displayName: NAME_SCHEMA.required('Display Name is required'),
+    email: EMAIL_SCHEMA.required('Email is required'),
+    password:PASSWORD_SCHEMA.required('Password is required'),
+    passwordConfirm: Yup.string().oneOf([Yup.ref('password')], 'Password does not match').required('Password Confirmation is a required fild')
 })

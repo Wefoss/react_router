@@ -24,7 +24,7 @@ const FormSignIn = () => {
       <Form className={style.form_signin}>
         <h1>LOGIN TO YOUR ACCOUNT</h1>
         <InputWrapper name="Email" placeholder="Email addres" />
-        <InputWrapper name="Password" placeholder="Password" />
+        <InputWrapper name="Password" placeholder="Password" type='password'/>
         <input type="submit" value="LOGIN" />
       </Form>
     </Formik>
